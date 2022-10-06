@@ -1,5 +1,5 @@
 {
-  "name": "Todo-List-App",
+  "name": "Todo-List-Project",
   "version": "1.0.0",
   "description": "> This is a project I created for listing out todo lists and applying all the different operations on it. Such as edit, delete,add, and display todolist.\r ## Built With",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yetemegn-telaye/Todo-List-App.git"
+    "url": "git+https://github.com/masouma-modarresi/Todo-List-App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yetemegn-telaye/Todo-List-App/issues"
+    "url": "https://github.com/masouma-modarresi/Todo-List-Project/issues"
   },
-  "homepage": "https://github.com/yetemegn-telaye/Todo-List-App#readme",
+  "homepage": "https://github.com/masouma-modarresi/Todo-List-Project#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
