@@ -1,4 +1,4 @@
-# Todo-List-App
+# Todo-List-Project
 
 > This is a project I created for listing out todo lists and applying all the different operations on it. Such as edit, delete,add, and display todolist.
 ## Built With
@@ -18,11 +18,11 @@ To get the content of this project locally you need to run the following command
 ### Setup
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/yetemegn-telaye/Todo-List-App.git
+git clone https://github.com/masouma-modarresi/Todo-List-Project.git
 ```
 3. To access cloned directory run:
 ```bash
-cd Todo-List-App
+cd Todo-List-Project
 ```
 3. Open it with the live server
 
