@@ -56,7 +56,7 @@ body {
 .todo {
   display: flex;
   justify-content: space-between;
-  padding: 0px 5px;
+  padding: 0 5px;
 }
 
 .todo p {
@@ -126,14 +126,4 @@ body {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-}
-
-@media screen and (min-width: 768px) {
-  #addTo {
-    min-width: 500px;
-  }
-
-  .task-input {
-    min-width: 440px;
-  }
 }
