@@ -4,7 +4,7 @@
 
 # Microverse To-Do-List Project
 
-> **This is a project I created for listing out todo lists and applying all the different operations on it. Such as edit, delete,add, and display todolist.*
+> **In this project, I added some functionality to  application to make it interactive. selecting the corresponding checkbox (or undo it by unchecking the checkbox). The updated tasks list will be stored in local storage.*
 
 
 ## Built With
