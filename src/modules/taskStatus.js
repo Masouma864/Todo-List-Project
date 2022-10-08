@@ -1,7 +1,8 @@
-import { todos } from "../app.js";
-const todoInput = document.querySelector("#newTodo");
+import { todoInput , todos } from '../app.js';
+
+//let todos = JSON.parse(localStorage.getItem("todos")) || [];
 // save todo
-export default function saveTodo() {
+ export default function saveTodo() {
   const todoValue = todoInput.value;
 
   // check if todo id empty
@@ -26,3 +27,4 @@ export default function saveTodo() {
     console.log(todos);
   }
 }
+console.log('hi')

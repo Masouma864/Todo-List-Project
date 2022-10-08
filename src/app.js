@@ -1,14 +1,12 @@
 import "./style.css";
-import saveTodo from "./modules/saveTodo.js";
-
+import saveTodo from './modules/taskStatus.js';
+// import saveTodo from './modules/saveTodo.js';
+export let  todos = JSON.parse(localStorage.getItem("todos")) || [];
+export const todoInput = document.querySelector("#newTodo");
 const addContent = document.querySelector("#formSection");
-
 // dynamic todo list
 const todoListEl = document.querySelector("#todo-list");
 
-export let todos = JSON.parse(localStorage.getItem("todos")) || [];
-
-// renderTodo();
 // render todo
 function renderTodo() {
   // clear befor a re render
@@ -57,6 +55,22 @@ function deleteTodo(todoId) {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// clear all completed tasks from the lis
+const completeSec = document.querySelector(".clear-cont");
+completeSec.addEventListener("click", (event) => {
+  event.preventDefault();
+  const remain = todos.filter((ele) => ele.checked === false);
+  remain.forEach((e, i) => {
+    e.index = i;
+  });
+  localStorage.setItem("todos", JSON.stringify(remain));
+  window.location.reload();
+});
+
+window.addEventListener("load", () => {
+  renderTodo();
+});
+
 // click event listener for all todos
 todoListEl.addEventListener("click", (event) => {
   const { target } = event;
@@ -76,20 +90,4 @@ todoListEl.addEventListener("click", (event) => {
   if (action === "delete") {
     deleteTodo(todoId);
   }
-});
-
-// clear all completed tasks from the lis
-const completeSec = document.querySelector(".clear-cont");
-completeSec.addEventListener("click", (event) => {
-  event.preventDefault();
-  const remain = todos.filter((ele) => ele.checked === false);
-  remain.forEach((e, i) => {
-    e.index = i;
-  });
-  localStorage.setItem("todos", JSON.stringify(remain));
-  window.location.reload();
-});
-
-window.addEventListener("load", () => {
-  renderTodo();
 });
