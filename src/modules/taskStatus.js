@@ -1,30 +1,36 @@
-import { todoInput , todos } from '../app.js';
+export const tasksItems = JSON.parse(localStorage.getItem('lion')) || [];
 
-//let todos = JSON.parse(localStorage.getItem("todos")) || [];
-// save todo
- export default function saveTodo() {
-  const todoValue = todoInput.value;
+class TaskStatus {
+  // check task status if its completed or not
+  static taskComplete = () => {
+    const checkbox = document.querySelectorAll('.checkbox');
+    checkbox.forEach((ele, i) => {
+      ele.addEventListener('change', () => {
+        if (tasksItems[i].complete === true) {
+          tasksItems[i].complete = false;
+          ele.nextElementSibling.classList.remove('checkboxActive');
+          localStorage.setItem('lion', JSON.stringify(tasksItems));
+        } else {
+          tasksItems[i].complete = true;
+          ele.nextElementSibling.classList.add('checkboxActive');
+          localStorage.setItem('lion', JSON.stringify(tasksItems));
+        }
+      });
+    });
+  };
 
-  // check if todo id empty
-  const isEmpty = todoValue === "";
-  // check if duplicat
-  const isDuplicate = todos.some(
-    (todo) => todo.value.toUpperCase() === todoValue.toUpperCase()
-  );
-
-  if (isEmpty) {
-    alert("input a todo");
-  } else if (isDuplicate) {
-    alert("Todo Already Exist");
-  } else {
-    const todo = {
-      value: todoValue,
-      checked: false,
-      color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-    };
-    todos.push(todo);
-    todoInput.value = "";
-    console.log(todos);
-  }
+  // clear all completed tasks from the list
+  static clearList = () => {
+    const clear = document.querySelector('.clear');
+    clear.addEventListener('click', (event) => {
+      event.preventDefault();
+      const remain = tasksItems.filter((ele) => ele.complete === false);
+      remain.forEach((e, i) => {
+        e.index = i;
+      });
+      localStorage.setItem('lion', JSON.stringify(remain));
+      window.location.reload();
+    });
+  };
 }
-console.log('hi')
+export default TaskStatus;
