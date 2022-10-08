@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.big-cont {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  margin-top: 3rem;
+}
+
+.title-cont {
+  padding: 15px;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-cont {
+  border-bottom: 1px solid rgb(239, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-cont button {
+  border: none;
+  padding-right: 20px;
+  background-color: white;
+}
+
+#newTodo {
+  padding: 15px;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  min-width: 300px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.todo p {
+  padding-left: 5px;
+  display: flex;
+  flex: auto;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+#addTo::placeholder {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.task-input {
+  outline: 0;
+  border: 0;
+  min-width: 300px;
+  font-size: 17px;
+}
+
+.singleLi {
+  padding: 15px;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-cont {
+  padding: 15px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.icon {
+  opacity: 0.4;
+}
+
+.checkboxActive {
+  text-decoration: line-through orangered;
+}
+
+.rotateactive {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  position: relative;
+  right: 13px;
+  font-size: 11px;
+  opacity: 0.4;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.clear {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
