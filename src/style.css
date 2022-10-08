@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .list-none {
@@ -39,34 +39,12 @@ body {
   align-items: center;
 }
 
-.add-cont button {
-  border: none;
-  padding-right: 20px;
-  background-color: white;
-}
-
-#newTodo {
+#addTo {
   padding: 15px;
   font-size: 18px;
   outline: 0;
   border: 0;
   min-width: 300px;
-}
-
-.todo {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5px;
-}
-
-.todo p {
-  padding-left: 5px;
-  display: flex;
-  flex: auto;
-}
-
-.checked {
-  text-decoration: line-through;
 }
 
 #addTo::placeholder {
@@ -126,4 +104,14 @@ body {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  #addTo {
+    min-width: 500px;
+  }
+
+  .task-input {
+    min-width: 440px;
+  }
 }
