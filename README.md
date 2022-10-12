@@ -18,7 +18,7 @@
 ## Live Demo
 ## GitHub Pages
 
- site is live at [(https://masouma-modarresi.github.io/Todo-List-Project/)]
+ site is live at [(https://Masouma864.github.io/Todo-List-Project/)]
 
 ## Get Started
 
@@ -31,7 +31,7 @@ To get the content of this project locally you need to run the following command
 ### Setup
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone git@github.com/masouma-modarresi/Todo-List-Project
+git clone git@github.com/Masouma864/Todo-List-Project
 ```
 3. To access cloned directory run:
 ```bash
@@ -74,7 +74,7 @@ npx eslint .
 
 👤 **Masouma Modarresi**
 
-- GitHub: [@masouma-modarresi](https://github.com/masouma-modarresi)
+- GitHub: [@masouma-modarresi](https://github.com/Masouma864)
 - Twitter: [@hasina389](https://twitter.com/hasina389)
 - LinkedIn: [maosouma-m](https://www.linkedin.com/in/masouma-m-9572a41b5/)
 
