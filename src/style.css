@@ -8,7 +8,9 @@
 
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: grey;
 }
+
 
 .list-none {
   list-style: none;
@@ -17,11 +19,14 @@ body {
 .main {
   display: flex;
   justify-content: center;
+
+  
 }
 
 .big-cont {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   margin-top: 3rem;
+  background-color: wheat;
 }
 
 .title-cont {
@@ -57,6 +62,7 @@ body {
   border: 0;
   min-width: 300px;
   font-size: 17px;
+  padding: 10px;
 }
 
 .singleLi {
@@ -109,6 +115,7 @@ body {
 @media screen and (min-width: 768px) {
   #addTo {
     min-width: 500px;
+    
   }
 
   .task-input {
