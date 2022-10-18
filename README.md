@@ -74,9 +74,9 @@ npx eslint .
 
 👤 **Masouma Modarresi**
 
-- GitHub: [@masouma-modarresi](https://github.com/Masouma864)
+- GitHub: [@masouma864](https://github.com/Masouma864)
 - Twitter: [@hasina389](https://twitter.com/hasina389)
-- LinkedIn: [maosouma-m](https://www.linkedin.com/in/masouma-m-9572a41b5/)
+- LinkedIn: [maosouma-m](https://www.linkedin.com/in/masouma-modarresi-9572a41b5/)
 
 
 ## 🤝 Contributing
