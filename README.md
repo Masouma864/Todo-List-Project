@@ -18,7 +18,7 @@
 ## Live Demo
 ## GitHub Pages
 
- site is live at [(https://Masouma864.github.io/Todo-List-Project/)]
+[ site is live at ](https://Masouma864.github.io/Todo-List-Project/)
 
 ## Get Started
 
