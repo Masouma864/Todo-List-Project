@@ -16,9 +16,8 @@
 - Webpack
 
 ## Live Demo
-## GitHub Pages
 
-[ site is live at ](https://Masouma864.github.io/Todo-List-Project/)
+[ Live Demo ](https://Masouma864.github.io/Todo-List-Project/)
 
 ## Get Started
 
@@ -76,7 +75,7 @@ npx eslint .
 
 - GitHub: [@masouma864](https://github.com/Masouma864)
 - Twitter: [@hasina389](https://twitter.com/hasina389)
-- LinkedIn: [maosouma-m](https://www.linkedin.com/in/masouma-modarresi-9572a41b5/)
+- LinkedIn: [maosouma-m](https://www.linkedin.com/in/masouma-modarresi/)
 
 
 ## 🤝 Contributing
